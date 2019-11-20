@@ -1,3 +1,4 @@
 一旦一个string对象在内存(堆)中被创建出来，他就无法被修改。特别要注意的是，String类的所有方法都没有改变字符串本身的值，都是返回了一个新的对象。
-
 如果你需要一个可修改的字符串，应该使用StringBuffer 或者 StringBuilder。否则会有大量时间浪费在垃圾回收上，因为每次试图修改都有新的string对象被创建出来。
+
+早期 Java 版本使用 16 位 char 数据类型表示 Unicode 字符。2个字节（Byte）的char表示Unicode 字符
